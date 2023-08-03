@@ -1,47 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav ul li a:hover {
+            background-color: #3e5f7b;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #333;
+        }
+        h1 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        h2 {
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            color: #2c3e50;
+        }
+        .project p {
+            margin: 0;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 0.5rem 1rem;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project a:hover {
+            background-color: #3e5f7b;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Portofolio Saya</h1>
+        <p>Selamat datang di halaman portofolio saya.</p>
     </header>
-    <main>
-        <!-- Isi dengan konten portofolio Anda -->
-    </main>
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo, nama saya [Nama Anda]. Saya adalah seorang web developer dengan pengalaman lebih dari 5 tahun. Saya memiliki kemampuan dalam mengembangkan website dengan HTML, CSS, dan JavaScript.</p>
+        <p>Saya juga mahir dalam menggunakan framework seperti React dan Bootstrap untuk membuat tampilan website yang responsif dan menarik.</p>
+    </section>
+    <section id="projects">
+        <h2>Proyek Terbaru</h2>
+        <div class="project">
+            <h3>Website Perusahaan ABC</h3>
+            <p>Proyek ini adalah pengembangan website untuk perusahaan ABC. Saya bertanggung jawab dalam merancang tata letak dan mengimplementasikan interaksi pada halaman.</p>
+            <a href="#">Lihat Proyek</a>
+        </div>
+        <div class="project">
+            <h3>Aplikasi To-Do List</h3>
+            <p>Aplikasi To-Do List yang saya buat menggunakan React. Aplikasi ini memungkinkan pengguna untuk mencatat tugas-tugas harian dan menandai ketika selesai.</p>
+            <a href="#">Lihat Proyek</a>
+        </div>
+        <!-- Tambahkan proyek lain di sini -->
+    </section>
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Jika Anda tertarik untuk bekerja sama atau ingin bertanya lebih lanjut, silakan hubungi saya melalui email di: <a href="mailto:nama@example.com">nama@example.com</a></p>
+    </section>
     <footer>
-        <p>&copy; 2023 Nama Anda</p>
+        <p>Hak Cipta &copy; 2023 [Nama Anda].</p>
     </footer>
-/* Gaya dasar untuk halaman portofolio */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
-    padding: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-    </body>
+</body>
 </html>
