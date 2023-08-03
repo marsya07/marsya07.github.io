@@ -1,1 +1,65 @@
-halo nama saya marsya
+mkdir portofolio
+cd portofolio
+npm init -y
+npm install express ejs
+portofolio/
+├─ public/
+│   ├─ css/
+│   │   └─ style.css
+│   └─ js/
+│       └─ script.js
+├─ views/
+│   └─ index.ejs
+└─ server.js
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.listen(port, () => {
+  console.log(`Server berjalan di http://localhost:${port}`);
+});
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Nama Saya</h1>
+    <p>Selamat datang di halaman portofolio saya.</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <p>Tulis sedikit tentang diri Anda di sini.</p>
+    </section>
+    <section id="projects">
+      <h2>Proyek</h2>
+      <div class="project">
+        <h3>Proyek 1</h3>
+        <p>Deskripsi proyek 1.</p>
+      </div>
+      <div class="project">
+        <h3>Proyek 2</h3>
+        <p>Deskripsi proyek 2.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: example@example.com</p>
+    </section>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>
+node server.js
+
